@@ -1,0 +1,358 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mayor Consulting — Freelance Landing</title>
+  <meta name="description" content="Consultoría de Operaciones & Franquicias. Aperturas rápidas, procesos claros y P&L bajo control.">
+  <link rel="icon" href="mc-logo.svg">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Calendly popup widget -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(1.5rem); transition: opacity .7s ease, transform .7s ease; will-change: transform, opacity; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+    .link-overlay { position: absolute; inset: 0; }
+  </style>
+      <!-- Open Graph / Twitter -->
+      <meta property="og:title" content="Mayor Consulting — Freelance Landing">
+      <meta property="og:description" content="Consultoría de Operaciones & Franquicias en Madrid. Aperturas rápidas, procesos claros y P&L bajo control. Reserva una reunión de 15’.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://TU-DOMINIO.com/">
+      <meta property="og:image" content="og-image.png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:locale" content="es_ES">
+      <meta property="og:locale:alternate" content="en_US">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Mayor Consulting — Freelance Landing">
+      <meta name="twitter:description" content="Consultoría de Operaciones & Franquicias en Madrid. Aperturas rápidas, procesos claros y P&L bajo control. Reserva una reunión de 15’.">
+      <meta name="twitter:image" content="og-image.png">
+
+</head>
+<body class="min-h-screen bg-neutral-50 text-neutral-900 flex flex-col items-center text-center px-6">
+  <!-- TopBar -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-neutral-200 text-xs text-neutral-600 py-2 px-4 flex items-center justify-between">
+    <div class="flex items-center gap-2" aria-label="Mayor Consulting logo">
+      <img src="mc-logo.svg" alt="Mayor Consulting" class="h-9 w-auto rounded-xl" onerror="this.style.display='none';document.getElementById('logo-fallback').classList.remove('hidden')">
+      <svg id="logo-fallback" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" class="rounded-xl hidden">
+        <rect width="36" height="36" rx="10" fill="#111111"></rect>
+        <path d="M9 25 V11 h3.8 l4.2 6.9 4.2-6.9H25v14h-3.2V16.3l-4 6.4h-1.6l-4-6.4V25H9z" fill="#FFFFFF"></path>
+        <circle cx="29" cy="7" r="3" fill="#22c55e"></circle>
+      </svg>
+      <span class="font-semibold text-sm text-neutral-800">Mayor Consulting</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-6" aria-label="Principal">
+      <a href="#services" class="hover:text-neutral-900" data-i18n="nav.services">Servicios</a>
+      <a href="#process" class="hover:text-neutral-900" data-i18n="nav.process">Cómo trabajo</a>
+      <a href="#blog" class="hover:text-neutral-900" data-i18n="nav.blog">Blog</a>
+      <a href="#contact" class="hover:text-neutral-900" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-2 text-[11px]">
+        <button id="btn-es" class="px-2 py-1 rounded border border-neutral-300" aria-label="Cambiar a Español">ES</button>
+        <button id="btn-en" class="px-2 py-1 rounded border border-neutral-300" aria-label="Switch to English">EN</button>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="mailto:diego.mayorserrano@gmail.com" class="hover:text-neutral-900">diego.mayorserrano@gmail.com</a>
+        <a href="tel:+34682662256" class="hover:text-neutral-900" aria-label="Llamar al 682 662 256">+34 682 662 256</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/34682662256?text=Hola%20Diego%2C%20vengo%20de%20tu%20web" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-5 right-5 z-50 rounded-full shadow-lg bg-green-600 text-white px-5 py-3 text-sm font-medium hover:opacity-90"
+     aria-label="Abrir WhatsApp" data-i18n-attr="textContent:cta.whatsappFloat">
+    WhatsApp ahora
+  </a>
+
+  <!-- HERO -->
+  <section class="py-24 max-w-4xl flex flex-col items-center justify-center">
+    <div class="reveal">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
+        <span data-i18n="hero.line1">¿Cuál es tu dolor de cabeza ahora mismo?</span><br>
+        <span class="text-neutral-800" data-i18n="hero.line2">Yo te lo soluciono en tiempo récord.</span>
+      </h1>
+    </div>
+
+    <div class="reveal" style="transition-delay:50ms">
+      <p class="text-xl md:text-2xl font-semibold text-neutral-900 leading-snug">
+        <span class="block" data-i18n="hero.sub1">Estás a un paso de tomar la decisión correcta.</span>
+        <span class="block" data-i18n="hero.sub2">Trabajemos juntos.</span>
+      </p>
+    </div>
+
+    <div class="reveal" style="transition-delay:100ms">
+      <p class="mt-4 text-lg md:text-xl text-neutral-700 leading-relaxed max-w-3xl" data-i18n="hero.paragraph">
+        Más de 15 años de experiencia como líder en el sector, visión 360º. Experto en Operaciones, Expansión, Comercial, Finanzas y Marketing.
+        ¿Abrimos tu primer local? ¿Tienes un modelo consolidado y lo quieres escalar? ¿No sabes qué hacer para conseguir un equipo motivado y de alto rendimiento? ¿Los procesos en tu negocio brillan por su ausencia? ¿Necesitas una buena estrategia de marketing para vender más? ¿Tu coste de producto es muy alto y necesitas darle una vuelta? ¿Quieres abrir nuevos canales de venta?
+        ¡Escríbeme YA y hagamos que las cosas pasen!
+      </p>
+    </div>
+
+    <div class="reveal" style="transition-delay:150ms">
+      <div class="mt-6 rounded-xl border border-amber-300 bg-amber-50 p-4 text-left text-sm md:text-base" data-i18n="hero.note">
+        Hablemos, es lo correcto para mejorar de una vez el rumbo de tu negocio. Evitarás problemas que te hacen perder dinero y tiempo. Estancarte en una obra que no avanza, gestionar un equipo desmotivado. Nunca más trabajarás en el kaos y sí con procesos sencillos. Sea cuál sea tu reto, te ayudaré.
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:200ms">
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/34682662256?text=Hola%20Diego%2C%20quiero%20contarte%20mi%20caso" target="_blank" rel="noopener noreferrer"
+           class="px-6 py-4 rounded-xl bg-green-600 text-white text-lg font-medium hover:opacity-90" aria-label="Hablar por WhatsApp" data-i18n="cta.whatsapp">Habla conmigo por WhatsApp</a>
+        <a href="mailto:diego.mayorserrano@gmail.com?subject=Consulta%20Mayor%20Consulting&body=Hola%20Diego%2C%20te%20contacto%20desde%20la%20web" target="_blank" rel="noopener noreferrer"
+           class="px-6 py-4 rounded-xl border border-neutral-300 text-lg font-medium hover:bg-white" data-i18n="cta.email">Escríbeme por email</a>
+        <a href="#" onclick="window.Calendly && window.Calendly.initPopupWidget({url:'https://calendly.com/diego-mayor/15min'}); return false;"
+           class="px-6 py-4 rounded-xl bg-neutral-900 text-white text-lg font-medium hover:opacity-90" aria-label="Reservar reunión en Calendly" data-i18n="cta.meeting">Reserva reunión (15’)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados en cifras -->
+  <section class="py-10 bg-white border-t border-neutral-200 w-full">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight" data-i18n="metrics.title">Resultados en cifras</h2>
+      <p class="mt-2 text-neutral-700" data-i18n="metrics.subtitle">Experiencia gestionando aperturas y operaciones reales en España y Europa.</p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div class="reveal"><div class="rounded-xl border border-neutral-200 p-4 bg-white text-center"><p class="text-2xl font-bold">40+</p><p class="text-neutral-600 text-sm" data-i18n="metrics.k1">Aperturas propias / soporte</p></div></div>
+        <div class="reveal" style="transition-delay:100ms"><div class="rounded-xl border border-neutral-200 p-4 bg-white text-center"><p class="text-2xl font-bold">€100M+</p><p class="text-neutral-600 text-sm" data-i18n="metrics.k2">P&L gestionado</p></div></div>
+        <div class="reveal" style="transition-delay:200ms"><div class="rounded-xl border border-neutral-200 p-4 bg-white text-center"><p class="text-2xl font-bold">25+</p><p class="text-neutral-600 text-sm" data-i18n="metrics.k3">Franquiciados activados</p></div></div>
+        <div class="reveal" style="transition-delay:300ms"><div class="rounded-xl border border-neutral-200 p-4 bg-white text-center"><p class="text-2xl font-bold">8</p><p class="text-neutral-600 text-sm" data-i18n="metrics.k4">Países operados</p></div></div>
+      </div>
+      <p class="mt-4 text-sm text-neutral-600" data-i18n="metrics.brands">He trabajado en: Five Guys, Taster, d-uñas, Beatae, IKEA.</p>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services" class="py-16 border-t border-neutral-200 bg-white w-full">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="services.title">Servicios</h2>
+      <p class="mt-3 text-neutral-700 max-w-2xl mx-auto" data-i18n="services.subtitle">Consultoría integral con planes adaptados para todo tipo de proyectos y niveles de inversión.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6 text-left">
+        <!-- 7 + 6 servicios -->
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.loc.title">Búsqueda de Local & Negociación</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.loc.i1">Scouting y validación</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.loc.i2">Due-diligence 360º</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.loc.i3">Negociación y contrato</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.open.title">Gestión de Aperturas</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.open.i1">Roadmap de obra y licencias</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.open.i2">Coordinación de equipos</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.open.i3">Día 1 impecable</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.ops.title">Optimización Operativa</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops.i1">Playbooks y turnos</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops.i2">Control de mermas</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops.i3">Auditorías y checklists</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.pnl.title">P&L & Modelo Económico</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.pnl.i1">Modelo 12–36 meses</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.pnl.i2">COGS/Labor/Rent</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.pnl.i3">Dashboards por canal</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.franchise.title">Desarrollo de Franquicias</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.franchise.i1">Manual y onboarding</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.franchise.i2">Soporte a partners</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.franchise.i3">KPIs y calidad</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.hiring.title">Selección y Contratación de Equipo</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.hiring.i1">Definición de perfiles y JDs</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.hiring.i2">Entrevistas estructuradas</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.hiring.i3">Selección del candidato</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.hiring.i4">Onboarding completo</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.marketing.title">Marketing</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.marketing.i1">Estrategia 360º</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.marketing.i2">Calendario y campañas</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.marketing.i3">Performance & orgánico</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.finance.title">Finanzas</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.finance.i1">Modelo P&L 12–36m</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.finance.i2">COGS & pricing</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.finance.i3">Dashboards y control</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.expand.title">Expansión</h3><ul class="mt-3 space-y-2 text sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.expand.i1">Scouting de ubicaciones</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.expand.i2">Viabilidad y caníbales</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.expand.i3">Negociación y contratos</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.ops2.title">Operaciones</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops2.i1">SOPs y manuales</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops2.i2">Estandarización de turnos</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.ops2.i3">Auditorías de calidad</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.train.title">Formación</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.train.i1">Onboarding completo</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.train.i2">Academia interna</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.train.i3">Evaluación y coaching</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.tech.title">Tecnología</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.tech.i1">TPV & integraciones</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.tech.i2">Herramientas no-code</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.tech.i3">Automatizaciones</span></li></ul></div>
+        <div class="rounded-2xl border border-neutral-200 p-6 bg-white shadow-sm"><h3 class="font-semibold text-lg" data-i18n="svc.dx.title">Transformación digital</h3><ul class="mt-3 space-y-2 text-sm text-neutral-700"><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.dx.i1">CRM y analítica</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.dx.i2">Nuevos canales de venta</span></li><li class="flex gap-2 items-start"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900"></span><span data-i18n="svc.dx.i3">Procesos digitales</span></li></ul></div>
+      </div>
+      <p class="mt-10 text-center text-sm text-neutral-600" data-i18n="services.foot">💡 Planes personalizados según tus objetivos y el momento de tu proyecto. Nos adaptamos a tu inversión, no al revés.</p>
+    </div>
+  </section>
+
+  <!-- Cómo trabajo -->
+  <section id="process" class="py-16 bg-neutral-50 border-t border-neutral-200 w-full">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="process.title">Cómo trabajo</h2>
+      <ol class="mt-6 grid md:grid-cols-4 gap-6 text-sm text-left">
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><div class="text-xs text-neutral-500" data-i18n="process.p1a">Paso 01</div><h3 class="font-semibold mt-1" data-i18n="process.p1t">Encaje y briefing</h3><p class="mt-2 text-neutral-700 text-sm" data-i18n="process.p1d">Llamada de 15 minutos para entender objetivos, timing y presupuesto. Firmamos NDA si hace falta.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><div class="text-xs text-neutral-500" data-i18n="process.p2a">Paso 02</div><h3 class="font-semibold mt-1" data-i18n="process.p2t">Plan conjunto & hoja de ruta</h3><p class="mt-2 text-neutral-700 text-sm" data-i18n="process.p2d">Priorizamos iniciativas, definimos KPIs y el ritmo de trabajo. Propongo quick wins y un plan por fases.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><div class="text-xs text-neutral-500" data-i18n="process.p3a">Paso 03</div><h3 class="font-semibold mt-1" data-i18n="process.p3t">Ejecución guiada & acompañamiento</h3><p class="mt-2 text-neutral-700 text-sm" data-i18n="process.p3d">Implementación práctica con tu equipo y proveedores. Yo coordino, tú avanzas sin fricciones.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><div class="text-xs text-neutral-500" data-i18n="process.p4a">Paso 04</div><h3 class="font-semibold mt-1" data-i18n="process.p4t">Medición & mejora continua</h3><p class="mt-2 text-neutral-700 text-sm" data-i18n="process.p4d">Seguimiento de KPIs, iteraciones y escalado. Procesos sencillos que todo el equipo respeta.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-16 bg-white border-t border-neutral-200 w-full">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="blog.title">Blog para inversores y emprendedores</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6 text-left">
+        <!-- Each card has a clickable overlay to real links -->
+        <article class="relative rounded-2xl border border-neutral-200 bg-white p-6">
+          <a href="blog/due-diligence.html" class="link-overlay" aria-label="Abrir artículo Due diligence"></a>
+          <div class="text-[11px] uppercase tracking-wide text-neutral-500">Due-diligence</div>
+          <h3 class="mt-1 font-semibold" data-i18n="blog.p1t">120+ puntos que reviso antes de firmar un local</h3>
+          <p class="mt-2 text-sm text-neutral-700" data-i18n="blog.p1d">De la extracción al ruido vecinal y la potencia eléctrica: mi checklist real para no heredar problemas ocultos.</p>
+        </article>
+        <article class="relative rounded-2xl border border-neutral-200 bg-white p-6">
+          <a href="blog/breakeven-canales.html" class="link-overlay" aria-label="Abrir artículo Break-even por canal"></a>
+          <div class="text-[11px] uppercase tracking-wide text-neutral-500">Unidad Económica</div>
+          <h3 class="mt-1 font-semibold" data-i18n="blog.p2t">Cómo calculo el break-even por canal (dine-in y delivery)</h3>
+          <p class="mt-2 text-sm text-neutral-700" data-i18n="blog.p2d">Modelo simple para saber si tu alquiler y ventas por canal sostienen la rentabilidad desde el mes 1.</p>
+        </article>
+        <article class="relative rounded-2xl border border-neutral-200 bg-white p-6">
+          <a href="blog/plan-90-dias-aperturas.html" class="link-overlay" aria-label="Abrir artículo plan 90 días"></a>
+          <div class="text-[11px] uppercase tracking-wide text-neutral-500">Aperturas</div>
+          <h3 class="mt-1 font-semibold" data-i18n="blog.p3t">Abrir en fecha: el plan de 90 días que uso desde Five Guys</h3>
+          <p class="mt-2 text-sm text-neutral-700" data-i18n="blog.p3d">Hitos, roles y riesgos habituales. Qué no negociar y cómo evitar retrasos de obra/licencias.</p>
+        </article>
+        <article class="relative rounded-2xl border border-neutral-200 bg-white p-6">
+          <a href="blog/retener-talento-sin-coste.html" class="link-overlay" aria-label="Abrir artículo retener talento"></a>
+          <div class="text-[11px] uppercase tracking-wide text-neutral-500">Talento</div>
+          <h3 class="mt-1 font-semibold" data-i18n="blog.p4t">Cómo retener talento en hostelería sin subir costes</h3>
+          <p class="mt-2 text-sm text-neutral-700" data-i18n="blog.p4d">Estructura salarial, carrera y cultura operativa. Con mi expertise, retener talento es tarea garantizada.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-16 bg-white border-t border-neutral-200 w-full">
+    <div class="mx-auto max-w-3xl px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="contact.title">Contacto</h2>
+      <p class="mt-2 text-neutral-700" data-i18n="contact.subtitle">Lo fácil: mándame un WhatsApp o un email y cuéntame brevemente tu caso.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="https://wa.me/34682662256?text=Hola%20Diego%2C%20te%20escribo%20desde%20la%20web" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-green-600 text-white font-medium" data-i18n="contact.whatsapp">WhatsApp: 682 662 256</a>
+        <a href="mailto:diego.mayorserrano@gmail.com?subject=Consulta%20Mayor%20Consulting" class="px-5 py-3 rounded-xl border border-neutral-300 font-medium hover:bg-white" data-i18n="contact.email">Email: diego.mayorserrano@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-neutral-200 bg-neutral-50 w-full">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div>
+        <p class="font-semibold">Mayor Consulting</p>
+        <p class="text-sm text-neutral-600" data-i18n="footer.tagline">Consultoría de Operaciones & Franquicias • Madrid</p>
+      </div>
+      <div class="text-sm text-neutral-600 flex flex-wrap gap-4">
+        <a href="#" class="hover:text-neutral-900" data-i18n="footer.legal">Aviso legal</a>
+        <a href="#" class="hover:text-neutral-900" data-i18n="footer.privacy">Privacidad</a>
+        <a href="#" class="hover:text-neutral-900" data-i18n="footer.cookies">Cookies</a>
+      </div>
+      <div class="text-sm text-neutral-600">© <span id="year"></span> • <span data-i18n="footer.allrights">Todos los derechos reservados</span></div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('show');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // --- Simple i18n (ES/EN) without frameworks ---
+    const dict = {
+      es: {
+        'nav.services': 'Servicios', 'nav.process':'Cómo trabajo', 'nav.blog':'Blog', 'nav.contact':'Contacto',
+        'cta.whatsappFloat':'WhatsApp ahora',
+        'hero.line1':'¿Cuál es tu dolor de cabeza ahora mismo?',
+        'hero.line2':'Yo te lo soluciono en tiempo récord.',
+        'hero.sub1':'Estás a un paso de tomar la decisión correcta.',
+        'hero.sub2':'Trabajemos juntos.',
+        'hero.paragraph':'Más de 15 años de experiencia como líder en el sector, visión 360º. Experto en Operaciones, Expansión, Comercial, Finanzas y Marketing. ¿Abrimos tu primer local? ¿Tienes un modelo consolidado y lo quieres escalar? ¿No sabes qué hacer para conseguir un equipo motivado y de alto rendimiento? ¿Los procesos en tu negocio brillan por su ausencia? ¿Necesitas una buena estrategia de marketing para vender más? ¿Tu coste de producto es muy alto y necesitas darle una vuelta? ¿Quieres abrir nuevos canales de venta? ¡Escríbeme YA y hagamos que las cosas pasen!',
+        'hero.note':'Hablemos, es lo correcto para mejorar de una vez el rumbo de tu negocio. Evitarás problemas que te hacen perder dinero y tiempo. Estancarte en una obra que no avanza, gestionar un equipo desmotivado. Nunca más trabajarás en el kaos y sí con procesos sencillos. Sea cuál sea tu reto, te ayudaré.',
+        'cta.whatsapp':'Habla conmigo por WhatsApp','cta.email':'Escríbeme por email','cta.meeting':'Reserva reunión (15’)',
+        'metrics.title':'Resultados en cifras','metrics.subtitle':'Experiencia gestionando aperturas y operaciones reales en España y Europa.',
+        'metrics.k1':'Aperturas propias / soporte','metrics.k2':'P&L gestionado','metrics.k3':'Franquiciados activados','metrics.k4':'Países operados',
+        'metrics.brands':'He trabajado en: Five Guys, Taster, d-uñas, Beatae, IKEA.',
+        'services.title':'Servicios','services.subtitle':'Consultoría integral con planes adaptados para todo tipo de proyectos y niveles de inversión.','services.foot':'💡 Planes personalizados según tus objetivos y el momento de tu proyecto. Nos adaptamos a tu inversión, no al revés.',
+        'svc.loc.title':'Búsqueda de Local & Negociación','svc.loc.i1':'Scouting y validación','svc.loc.i2':'Due-diligence 360º','svc.loc.i3':'Negociación y contrato',
+        'svc.open.title':'Gestión de Aperturas','svc.open.i1':'Roadmap de obra y licencias','svc.open.i2':'Coordinación de equipos','svc.open.i3':'Día 1 impecable',
+        'svc.ops.title':'Optimización Operativa','svc.ops.i1':'Playbooks y turnos','svc.ops.i2':'Control de mermas','svc.ops.i3':'Auditorías y checklists',
+        'svc.pnl.title':'P&L & Modelo Económico','svc.pnl.i1':'Modelo 12–36 meses','svc.pnl.i2':'COGS/Labor/Rent','svc.pnl.i3':'Dashboards por canal',
+        'svc.franchise.title':'Desarrollo de Franquicias','svc.franchise.i1':'Manual y onboarding','svc.franchise.i2':'Soporte a partners','svc.franchise.i3':'KPIs y calidad',
+        'svc.hiring.title':'Selección y Contratación de Equipo','svc.hiring.i1':'Definición de perfiles y JDs','svc.hiring.i2':'Entrevistas estructuradas','svc.hiring.i3':'Selección del candidato','svc.hiring.i4':'Onboarding completo',
+        'svc.marketing.title':'Marketing','svc.marketing.i1':'Estrategia 360º','svc.marketing.i2':'Calendario y campañas','svc.marketing.i3':'Performance & orgánico',
+        'svc.finance.title':'Finanzas','svc.finance.i1':'Modelo P&L 12–36m','svc.finance.i2':'COGS & pricing','svc.finance.i3':'Dashboards y control',
+        'svc.expand.title':'Expansión','svc.expand.i1':'Scouting de ubicaciones','svc.expand.i2':'Viabilidad y caníbales','svc.expand.i3':'Negociación y contratos',
+        'svc.ops2.title':'Operaciones','svc.ops2.i1':'SOPs y manuales','svc.ops2.i2':'Estandarización de turnos','svc.ops2.i3':'Auditorías de calidad',
+        'svc.train.title':'Formación','svc.train.i1':'Onboarding completo','svc.train.i2':'Academia interna','svc.train.i3':'Evaluación y coaching',
+        'svc.tech.title':'Tecnología','svc.tech.i1':'TPV & integraciones','svc.tech.i2':'Herramientas no-code','svc.tech.i3':'Automatizaciones',
+        'svc.dx.title':'Transformación digital','svc.dx.i1':'CRM y analítica','svc.dx.i2':'Nuevos canales de venta','svc.dx.i3':'Procesos digitales',
+        'process.title':'Cómo trabajo',
+        'process.p1a':'Paso 01','process.p1t':'Encaje y briefing','process.p1d':'Llamada de 15 minutos para entender objetivos, timing y presupuesto. Firmamos NDA si hace falta.',
+        'process.p2a':'Paso 02','process.p2t':'Plan conjunto & hoja de ruta','process.p2d':'Priorizamos iniciativas, definimos KPIs y el ritmo de trabajo. Propongo quick wins y un plan por fases.',
+        'process.p3a':'Paso 03','process.p3t':'Ejecución guiada & acompañamiento','process.p3d':'Implementación práctica con tu equipo y proveedores. Yo coordino, tú avanzas sin fricciones.',
+        'process.p4a':'Paso 04','process.p4t':'Medición & mejora continua','process.p4d':'Seguimiento de KPIs, iteraciones y escalado. Procesos sencillos que todo el equipo respeta.',
+        'blog.title':'Blog para inversores y emprendedores',
+        'blog.p1t':'120+ puntos que reviso antes de firmar un local','blog.p1d':'De la extracción al ruido vecinal y la potencia eléctrica: mi checklist real para no heredar problemas ocultos.',
+        'blog.p2t':'Cómo calculo el break-even por canal (dine-in y delivery)','blog.p2d':'Modelo simple para saber si tu alquiler y ventas por canal sostienen la rentabilidad desde el mes 1.',
+        'blog.p3t':'Abrir en fecha: el plan de 90 días que uso desde Five Guys','blog.p3d':'Hitos, roles y riesgos habituales. Qué no negociar y cómo evitar retrasos de obra/licencias.',
+        'blog.p4t':'Cómo retener talento en hostelería sin subir costes','blog.p4d':'Estructura salarial, carrera y cultura operativa. Con mi expertise, retener talento es tarea garantizada.',
+        'contact.title':'Contacto','contact.subtitle':'Lo fácil: mándame un WhatsApp o un email y cuéntame brevemente tu caso.','contact.whatsapp':'WhatsApp: 682 662 256','contact.email':'Email: diego.mayorserrano@gmail.com',
+        'footer.tagline':'Consultoría de Operaciones & Franquicias • Madrid','footer.legal':'Aviso legal','footer.privacy':'Privacidad','footer.cookies':'Cookies','footer.allrights':'Todos los derechos reservados'
+      },
+      en: {
+        'nav.services':'Services', 'nav.process':'How I work', 'nav.blog':'Blog', 'nav.contact':'Contact',
+        'cta.whatsappFloat':'WhatsApp now',
+        'hero.line1':'What is your biggest headache right now?',
+        'hero.line2':'I’ll solve it at speed—no friction.',
+        'hero.sub1':'You’re one step away from the right decision.',
+        'hero.sub2':'Let’s work together.',
+        'hero.paragraph':'15+ years leading openings and operations with a 360º view across Operations, Expansion, Commercial, Finance and Marketing. Opening your first unit? Want to scale a proven model? Need a motivated high-performance team? Missing processes? Need a marketing strategy to sell more? High product costs? Want new sales channels? Message me and let’s make it happen.',
+        'hero.note':'Let’s talk. It’s the right move for your business. Avoid stalled construction, demotivated teams and daily money leaks. No more chaos—simple processes that everyone respects. Whatever your challenge, I’ll help.',
+        'cta.whatsapp':'Chat on WhatsApp','cta.email':'Email me','cta.meeting':'Book a meeting (15’)',
+        'metrics.title':'Results in numbers','metrics.subtitle':'Hands-on experience running openings and operations across Spain and Europe.',
+        'metrics.k1':'Openings supported','metrics.k2':'P&L managed','metrics.k3':'Franchisees activated','metrics.k4':'Countries operated',
+        'metrics.brands':'Worked with: Five Guys, Taster, d-uñas, Beatae, IKEA.',
+        'services.title':'Services','services.subtitle':'Tailored plans for any project and investment level.','services.foot':'💡 Custom plans to fit your goals and stage. We adapt to your investment, not the other way around.',
+        'svc.loc.title':'Site Search & Negotiation','svc.loc.i1':'Scouting and validation','svc.loc.i2':'360º due diligence','svc.loc.i3':'Negotiation & contract',
+        'svc.open.title':'Openings Management','svc.open.i1':'Build & permits roadmap','svc.open.i2':'Team coordination','svc.open.i3':'Flawless Day 1',
+        'svc.ops.title':'Operations Optimization','svc.ops.i1':'Playbooks & shifts','svc.ops.i2':'Waste control','svc.ops.i3':'Audits & checklists',
+        'svc.pnl.title':'P&L & Unit Economics','svc.pnl.i1':'12–36 month model','svc.pnl.i2':'COGS/Labor/Rent','svc.pnl.i3':'Channel dashboards',
+        'svc.franchise.title':'Franchise Development','svc.franchise.i1':'Manual & onboarding','svc.franchise.i2':'Partner support','svc.franchise.i3':'KPIs & quality',
+        'svc.hiring.title':'Hiring & Onboarding','svc.hiring.i1':'Role profiles & JDs','svc.hiring.i2':'Structured interviews','svc.hiring.i3':'Candidate selection','svc.hiring.i4':'Full onboarding',
+        'svc.marketing.title':'Marketing','svc.marketing.i1':'360º strategy','svc.marketing.i2':'Calendar & campaigns','svc.marketing.i3':'Performance & organic',
+        'svc.finance.title':'Finance','svc.finance.i1':'12–36m P&L model','svc.finance.i2':'COGS & pricing','svc.finance.i3':'Dashboards & control',
+        'svc.expand.title':'Expansion','svc.expand.i1':'Location scouting','svc.expand.i2':'Feasibility & cannibals','svc.expand.i3':'Negotiation & contracts',
+        'svc.ops2.title':'Operations','svc.ops2.i1':'SOPs & manuals','svc.ops2.i2':'Shift standardization','svc.ops2.i3':'Quality audits',
+        'svc.train.title':'Training','svc.train.i1':'Full onboarding','svc.train.i2':'Internal academy','svc.train.i3':'Evaluation & coaching',
+        'svc.tech.title':'Technology','svc.tech.i1':'POS & integrations','svc.tech.i2':'No‑code tools','svc.tech.i3':'Automations',
+        'svc.dx.title':'Digital Transformation','svc.dx.i1':'CRM & analytics','svc.dx.i2':'New sales channels','svc.dx.i3':'Digital processes',
+        'process.title':'How I work',
+        'process.p1a':'Step 01','process.p1t':'Fit & briefing','process.p1d':'15-minute call to align on goals, timing and budget. NDA on request.',
+        'process.p2a':'Step 02','process.p2t':'Joint plan & roadmap','process.p2d':'Prioritize, define KPIs and cadence. Quick wins and phased plan.',
+        'process.p3a':'Step 03','process.p3t':'Guided execution','process.p3d':'Hands-on implementation with your team and vendors. I coordinate; you move fast.',
+        'process.p4a':'Step 04','process.p4t':'Measure & improve','process.p4d':'KPI tracking, iterations and scale. Simple processes everyone respects.',
+        'blog.title':'Blog for investors and founders',
+        'blog.p1t':'120+ checks before signing a lease','blog.p1d':'From extraction to neighbor noise and power capacity—my real checklist to avoid hidden problems.',
+        'blog.p2t':'Break-even by channel (dine-in & delivery)','blog.p2d':'A simple model to check if rent and channel sales sustain profitability from month 1.',
+        'blog.p3t':'Open on time: my 90-day plan','blog.p3d':'Milestones, roles and risks. What not to negotiate and how to avoid delays.',
+        'blog.p4t':'Retain talent without higher costs','blog.p4d':'Comp structure, careers and operational culture.',
+        'contact.title':'Contact','contact.subtitle':'The easy way: WhatsApp or email with a brief of your case.','contact.whatsapp':'WhatsApp: +34 682 662 256','contact.email':'Email: diego.mayorserrano@gmail.com',
+        'footer.tagline':'Operations & Franchising Consulting • Madrid','footer.legal':'Legal notice','footer.privacy':'Privacy','footer.cookies':'Cookies','footer.allrights':'All rights reserved'
+      }
+    };
+
+    function applyI18n(lang) {
+      document.documentElement.lang = lang;
+      // Elements with data-i18n (textContent)
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[lang] && dict[lang][key]) el.textContent = dict[lang][key];
+      });
+      // Elements using data-i18n-attr="textContent:key"
+      document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+        const parts = el.getAttribute('data-i18n-attr').split(':');
+        if (parts.length === 2) {
+          const attr = parts[0], key = parts[1];
+          if (attr === 'textContent' && dict[lang] && dict[lang][key]) el.textContent = dict[lang][key];
+        }
+      });
+      localStorage.setItem('lang', lang);
+    }
+
+    // Init language from ?lang= or localStorage
+    const urlLang = new URLSearchParams(location.search).get('lang');
+    const savedLang = localStorage.getItem('lang');
+    const initialLang = (urlLang === 'en' || urlLang === 'es') ? urlLang : (savedLang || 'es');
+    applyI18n(initialLang);
+
+    document.getElementById('btn-es').addEventListener('click', () => applyI18n('es'));
+    document.getElementById('btn-en').addEventListener('click', () => applyI18n('en'));
+  </script>
+</body>
+</html>
